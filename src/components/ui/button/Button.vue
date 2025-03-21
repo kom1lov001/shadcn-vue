@@ -19,7 +19,6 @@ const props = withDefaults(defineProps<Props>(), {
   <Primitive
     :as="as"
     :as-child="asChild"
-    class="!rounded-[15px] !h-[42px]"
     :class="cn(buttonVariants({ variant, size }), props.class)"
   >
     <slot />

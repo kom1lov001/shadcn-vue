@@ -3,10 +3,26 @@ import { createRouter, createWebHistory } from 'vue-router'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    // {
+    //   path: '/',
+    //   name: 'Home',
+    //   component: () => import('@/layouts/shadcn/MainView.vue'),
+    //   children: [
+    //     {
+    //       path: '/',
+    //       redirect: '/dashboard',
+    //     },
+    //     {
+    //       path: 'dashboard',
+    //       name: 'dashboard-view',
+    //       component: () => import('@/layouts/DashboardView.vue'),
+    //     },
+    //   ],
+    // },
     {
       path: '/',
       name: 'Home',
-      component: () => import('@/views/dashboard/HomeView.vue'),
+      component: () => import('@/layouts/shadcn/MainView.vue'),
       children: [
         {
           path: '/',
@@ -15,7 +31,7 @@ const router = createRouter({
         {
           path: 'dashboard',
           name: 'dashboard-view',
-          component: () => import('@/layouts/DashboardView.vue'),
+          component: () => import('@/views/shadcn/DashboardView.vue'),
         },
       ],
     },

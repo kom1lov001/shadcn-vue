@@ -1,0 +1,7 @@
+export { default as UserIcon } from './UserIcon.vue'
+export { default as SettingsIcon } from './SettingIcon.vue'
+export { default as BooksIcon } from './BooksIcon.vue'
+export { default as BranchesIcon } from './BranchesIcon.vue'
+export { default as CatalogIcon } from './CatalogIcon.vue'
+export { default as DashboardIcon } from './DashboardIcon.vue'
+export { default as UsersIcon } from './UsersIcon.vue'
